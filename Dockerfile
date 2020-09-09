@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 LABEL maintainer="encry1024@gmail.com"
 RUN sed -i -e "s%http://archive.ubuntu.com/ubuntu/%http://ftp.iij.ad.jp/pub/linux/ubuntu/archive/%g" /etc/apt/sources.list
 RUN apt update -y && apt upgrade -y && apt install git pcregrep libpcre++-dev python-dev curl gcc -y
